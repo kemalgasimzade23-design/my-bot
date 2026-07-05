@@ -20,7 +20,7 @@ t = Thread(target=run)
 t.start()
 
 # --- КОД ТВОЕГО БОТА ---
-TOKEN = "8851801856:AAGJQ1rXxXyDyZaVQwyAtnnvQZtF0k5PBRY"
+TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 users_data = {}
